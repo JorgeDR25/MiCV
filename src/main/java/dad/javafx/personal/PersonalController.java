@@ -128,9 +128,7 @@ public class PersonalController implements Initializable {
 	}
 
 	public void  obtenerPaises() {
-		//File paises=new File("src\\main\\resources\\dad\\javafx\\resources\\paises.csv");
-		System.out.println(getClass().getPackageName());
-		File paises=new File("C:\\Users\\Jorge\\eclipse-workspace\\MiCV\\src\\main\\resources\\dad\\javafx\\resources\\paises.csv");
+		File paises=new File(System.getProperty("user.dir") + "\\src\\main\\resources\\dad\\javafx\\resources\\paises.csv");
 		try {
 			String leer;
 			FileReader leerPaises=new FileReader(paises);
@@ -149,7 +147,7 @@ public class PersonalController implements Initializable {
 	}
 	
 	public void  obtenerNacionalidad() {
-		File paises=new File("D:\\Users\\Alumno\\eclipse-workspace\\MiCV\\src\\dad\\javafx\\resources\\nacionalidades.csv");
+		File paises=new File(System.getProperty("user.dir") + "\\src\\dad\\javafx\\resources\\nacionalidades.csv");
 		try {
 			String leer;
 			FileReader leerPaises=new FileReader(paises);
