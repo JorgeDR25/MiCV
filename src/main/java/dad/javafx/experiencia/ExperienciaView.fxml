@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="view" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <TableView fx:id="experienciaTableView" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="desdeTableColumn" maxWidth="-1.0" minWidth="75.0" prefWidth="-1.0" text="Desde" />
+          <TableColumn fx:id="hastaTableColumn" maxWidth="-1.0" minWidth="75.0" prefWidth="-1.0" text="Hasta" />
+            <TableColumn fx:id="denominacionTableColumn" maxWidth="-1.0" minWidth="100.0" prefWidth="-1.0" text="Denominación" />
+            <TableColumn fx:id="empleadorTableColumn" maxWidth="-1.0" minWidth="100.0" prefWidth="-1.0" text="Empleador" />
+        </columns>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+      </TableView>
+   </center>
+   <right>
+      <VBox alignment="TOP_CENTER" spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="anadirButton" mnemonicParsing="false" onAction="#onAnadir" prefWidth="58.4" text="Añadir" />
+            <Button fx:id="eliminarButton" mnemonicParsing="false" onAction="#onEliminar" text="Eliminar" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+      </VBox>
+   </right>
+</BorderPane>

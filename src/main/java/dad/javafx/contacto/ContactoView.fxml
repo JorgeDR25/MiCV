@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<SplitPane fx:id="view" dividerPositions="0.5, 0.5" orientation="VERTICAL" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <items>
+      <TitledPane fx:id="telefonosTitledPane" animated="false" contentDisplay="TOP" text="Teléfonos">
+         <content>
+            <BorderPane>
+               <center>
+                  <TableView fx:id="telefonoTableView" BorderPane.alignment="CENTER">
+                    <columns>
+                      <TableColumn fx:id="numeroTableColumn" maxWidth="-1.0" minWidth="100.0" prefWidth="-1.0" text="Número" />
+                      <TableColumn fx:id="tipoTableColumn" maxWidth="-1.0" minWidth="100.0" prefWidth="-1.0" text="Tipo" />
+                    </columns>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TableView>
+               </center>
+               <right>
+                  <VBox alignment="TOP_CENTER" focusTraversable="true" spacing="5.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="anadirTelefonoButton" mnemonicParsing="false" onAction="#onAnadirTelefono" text="Añadir">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="eliminarTelefonoButton" mnemonicParsing="false" onAction="#onEliminarTelefono" text="Eliminar" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets left="5.0" />
+                     </opaqueInsets>
+                  </VBox>
+               </right>
+            </BorderPane>
+         </content>
+      </TitledPane>
+      <TitledPane fx:id="websTitledPane" animated="false" text="Webs">
+         <content>
+            <BorderPane>
+               <right>
+                  <VBox alignment="TOP_CENTER" spacing="5.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="anadirWebButton" mnemonicParsing="false" onAction="#onAnadirWeb" text="Añadir">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="eliminarWebButton" mnemonicParsing="false" onAction="#onEliminarWeb" text="Eliminar" />
+                     </children>
+                  </VBox>
+               </right>
+               <center>
+                  <TableView fx:id="websTableView" BorderPane.alignment="CENTER">
+                     <columns>
+                        <TableColumn fx:id="webTableColumn" maxWidth="-1.0" minWidth="100.0" prefWidth="-1.0" text="Web" />
+                     </columns>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TableView>
+               </center>
+            </BorderPane>
+         </content>
+      </TitledPane>
+      <TitledPane fx:id="correoTitledPane" animated="false" text="Direccion de correo" wrapText="true">
+         <content>
+            <BorderPane>
+               <center>
+                  <TableView fx:id="correoTableView" BorderPane.alignment="CENTER">
+                     <columns>
+                        <TableColumn fx:id="emailTableColumn" maxWidth="-1.0" minWidth="100.0" prefWidth="-1.0" text="E-mail" />
+                     </columns>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TableView>
+               </center>
+               <right>
+                  <VBox alignment="TOP_CENTER" fillWidth="false" spacing="5.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="anadirCorreoButton" mnemonicParsing="false" onAction="#onAnadirEmail" text="Añadir">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="eliminarCorreoButton" mnemonicParsing="false" onAction="#onEliminarEmail" text="Eliminar" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+               </right>
+            </BorderPane>
+         </content>
+      </TitledPane>
+   </items>
+</SplitPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cv>
+    <contacto>
+        <direccionesCorreo direccion="jorgesur1999@gmail.com"/>
+        <telefonos numero="688933342" tipo="MOVIL"/>
+        <telefonos numero="922546352" tipo="DOMICILIO"/>
+        <webs url="www.jorge.com"/>
+    </contacto>
+    <experiencias desde="2018-10-11" hasta="2019-09-12">
+        <denominacion>nada</denominacion>
+        <empleador>nadie</empleador>
+    </experiencias>
+    <formacion desde="2017-12-04" hasta="2019-12-24">
+        <denominacion>nada</denominacion>
+        <organizador>Paco</organizador>
+    </formacion>
+    <habilidades denominacion="javaFx" nivel="INTERMEDIO"/>
+    <habilidades denominacion="Ingles" nivel="INTERMEDIO">
+        <idioma certificacion="no"/>
+    </habilidades>
+    <personal identificacion="64853512p">
+        <apellidos>Díaz Ramos</apellidos>
+        <codigoPostal>38631</codigoPostal>
+        <direccion>nombre calle</direccion>
+        <fechaNacimiento>1999-07-25</fechaNacimiento>
+        <localidad>la Cuesta</localidad>
+        <nacionalidades denominacion="español"/>
+        <nombre>Jorge</nombre>
+        <pais>España</pais>
+    </personal>
+</cv>
